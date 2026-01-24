@@ -3,90 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name</title>
-    <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Tomorrow&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Syne&display=swap" rel="stylesheet">
+    <title>Jamison K. Warren</title>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Tomorrow:wght@400;500&family=Syne:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="sidebar">
-        <img src="logo.png" alt="Logo" class="logo">
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#courses">Courses</a></li>
-                <li><a href="#research">Research</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="sidebar-info">
-<img src="profile-picture.png" alt="Profile Picture" class="profile-image">
-            <h2>Jamison K. Warren</h2>
-            <p>MA: California State University Sacramento</p>
-	    <p>PhD: Colorado State University</p>
+    <!-- Hamburger Menu (Mobile Only) -->
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Overlay (Mobile Only) -->
+    <div class="overlay" id="overlay"></div>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-content">
+            <!-- Logo Placeholder -->
+            <div class="logo">JKW</div>
+
+            <!-- Navigation Menu -->
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#cv" class="nav-link">CV & Introduction</a></li>
+                    <li><a href="#research" class="nav-link">Research & Writing</a></li>
+                    <li><a href="#teaching" class="nav-link">Teaching & Service</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Profile Section -->
+            <div class="profile">
+                <img src="profile-picture.png" alt="Profile" class="profile-image">
+                <h3 class="profile-name">Jamison K. Warren</h3>
+                <p class="profile-title">Graduate Teaching Assistant</p>
+            </div>
         </div>
-    </div>
+    </aside>
 
-    <div class="main-content">
-        <section id="about" class="section">
-            <h1>About Me</h1>
-            <p>Biography...</p>
-            <a href="https://linkedin.com/in/yourname" target="_blank">LinkedIn</a> | 
-            <a href="https://scholar.google.com/citations?user=YourGoogleScholarID" target="_blank">Google Scholar</a>
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Home Section -->
+        <section id="home" class="section">
+            <h1>Welcome</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
 
-        <section id="courses" class="section">
-            <h1>Courses</h1>
-            <div class="course-item">
-                <img src="course-image-1.jpg" alt="Course Image 1">
-                <h2>Course Title</h2>
-                <p>Description...</p>
-                <a href="#">Learn More</a>
-            </div>
-            <div class="course-item">
-                <img src="course-image-2.jpg" alt="Course Image 2">
-                <h2>Course Title</h2>
-                <p>Description...</p>
-                <a href="#">Learn More</a>
-            </div>
+        <!-- CV & Introduction Section -->
+        <section id="cv" class="section">
+            <h1>CV & Introduction</h1>
+            <h2>Education</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</p>
+            
+            <h2>Academic Positions</h2>
+            <p>Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, commodo vitae, ornare sit amet, wisi.</p>
+            
+            <h2>Research Interests</h2>
+            <p>Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. Donec non enim in turpis pulvinar facilisis. Ut felis. Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat.</p>
         </section>
 
+        <!-- Research & Writing Section -->
         <section id="research" class="section">
-            <h1>Research</h1>
+            <h1>Research & Writing</h1>
             <h2>Publications</h2>
-            <ul>
-                <li><strong>Title:</strong> Publication Title 1</li>
-                <li><strong>Author(s):</strong> You, Co-author 1, Co-author 2</li>
-                <li><strong>Journal/Conference:</strong> Journal/Conference Name</li>
-            </ul>
-            <h2>Grants and Projects</h2>
-            <ul>
-                <li><strong>Title:</strong> Grant/Project Title</li>
-                <li><strong>Funding Source:</strong> Funding Source Name</li>
-                <li><strong>Description:</strong> Brief description of the project...</li>
-            </ul>
+            <p>Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate sem tristique cursus.</p>
+            
+            <h2>Current Projects</h2>
+            <p>Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi. Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc. Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel, velit.</p>
+            
+            <h2>Working Papers</h2>
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci. Aenean nec lorem. In porttitor.</p>
         </section>
 
+        <!-- Teaching & Service Section -->
+        <section id="teaching" class="section">
+            <h1>Teaching & Service</h1>
+            <h2>Courses Taught</h2>
+            <p>Donec pretium posuere tellus. Proin quam nisl, tincidunt et, mattis eget, convallis nec, purus. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla posuere.</p>
+            
+            <h2>Service & Committees</h2>
+            <p>Donec vitae dolor. Nullam tristique diam non turpis. Cras placerat accumsan nulla. Nullam rutrum. Nam vestibulum accumsan nisl. Suspendisse potenti. Morbi mattis felis at nunc.</p>
+            
+            <h2>Advising</h2>
+            <p>Vivamus fermentum tortor quam, at aliquam mi blandit a. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nisl eros, pulvinar facilisis justo mollis, auctor consequat urna.</p>
+        </section>
+
+        <!-- Contact Section -->
         <section id="contact" class="section">
             <h1>Contact</h1>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+            <div class="email-reveal">
+<button id="email-btn" class="email-button">The best way to reach me is via email.</button>
+<p id="email-display" class="email-address" style="display: none;"></p>  
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Send Message</button>
-            </form>
+            </div>
+            <div class="contact-info">
+                <h2>Student Hours</h2>
+                <p>Mondays & Wednesdays, 4:00 PM - 5:30 PM<br>
+                Or by appointment</p>
+                
+                <h2>Office Location</h2>
+                <p>Behavioral Sciences Building, Room A208<br>
+                Colorado State University<br>
+                Fort Collins, CO</p>
+            </div>
         </section>
-    </div>
 
-    <footer>
-        <p>&copy; 2026 Jamison K. Warren</p>
-    </footer>
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2027 Jamison K. Warren. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
